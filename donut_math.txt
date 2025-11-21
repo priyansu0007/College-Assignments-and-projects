@@ -1,0 +1,42 @@
+The math involved in the 3D rotating donut animation is based on:
+
+1. *Trigonometry*: Sine and cosine functions are used to generate 3D coordinates of the torus (donut shape).
+2. *3D Projection*: Perspective projection is used to map 3D coordinates to 2D screen coordinates.
+3. *Rotation Matrices*: Rotation matrices are used to rotate the 3D coordinates of the torus.
+
+*Rotation Matrices:*
+
+A rotation matrix is a mathematical representation of a rotation in 3D space. It's a 3x3 matrix that, when multiplied with a 3D vector, rotates the vector around a specific axis.
+
+There are three basic rotation matrices:
+
+1. *Rotation around X-axis*:
+| 1  0    0    |
+| 0  cos -sin |
+| 0  sin  cos |
+
+2. *Rotation around Y-axis*:
+| cos  0  sin |
+| 0   1   0   |
+| -sin 0  cos |
+
+3. *Rotation around Z-axis*:
+| cos -sin  0 |
+| sin  cos  0 |
+| 0    0    1 |
+
+These matrices can be combined to rotate an object around multiple axes.
+
+In the donut code, the rotation matrices are applied to the 3D coordinates of the torus to create the rotation effect.
+
+*3D Projection:*
+
+The 3D projection formula used in the code is a simplified version of the perspective projection formula:
+x' = x / (z + distance)
+y' = y / (z + distance)
+
+This formula maps 3D coordinates (x, y, z) to 2D screen coordinates (x', y').
+
+The code uses a combination of these mathematical concepts to create the rotating donut animation.
+
+Would you like more details or clarification on any specific aspect?
