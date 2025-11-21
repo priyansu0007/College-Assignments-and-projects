@@ -5,3 +5,5 @@ list of assignments:
 2.write a program in c to calculate tax slab in FY 2025-26
 3.Write a program in c to print a simple house layout
 4.write a program in c to find the number of ways a set of matrices can be multiplied
+5.explain the math behind donut.c
+
